@@ -1,0 +1,60 @@
+.user-info {
+    width: 99%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+    line-height: 50px;
+    font-size: 12px
+}
+
+.user-account::before {
+    content: "";
+    margin: 0 2px 0 20px;
+    color: #999;
+    font-size: 14px;
+}
+
+.user-account a {
+    color: #333;
+}
+
+.last-login {
+    margin-left: 30px;
+}
+
+.last-login span {
+    color: #999;
+}
+
+.logout {
+    margin-right: 20px;
+}
+
+.upload {
+    width: 99%;
+    height: 150px;
+    margin: 10px 0;
+    padding-top: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+}
+
+.up-border {
+    width: 98%;
+    height: 130px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 130px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px dashed #999;
+    cursor: pointer;
+}
+
+.bottom-copy {
+    position: absolute;
+    width: 99%;
+    height: 50px;
+    background-color: #fff;
+}
