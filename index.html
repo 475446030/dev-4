@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
@@ -59,15 +59,201 @@
             </div>
         </div>
 
+        <div class="files">
+            <!-- <div class="file-header">
+                <ul>
+                    <li>File_Name</li>
+                    <li>File_Size</li>
+                    <li>Upload_Time</li>
+                    <li>Operat</li>
+                </ul>
+            </div>
+            <div class="file-body">
+                <ul>
+                    <li>chrome.exe</li>
+                    <li>60MB</li>
+                    <li>2020-9-25 9:26:12</li>
+                    <li>Download</li>
+                </ul>
+            </div> -->
+            <div class="Table">
+                <div class="thead">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>file_name</th>
+                                <th>file_size</th>
+                                <th>file_type</th>
+                                <th>upload_time</th>
+                                <th>operate</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tbody">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>213</td>
+                                <td>123</td>
+                                <td>123</td>
+                                <td>123</td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pages">
+                <div class="page">1</div>
+                <div class="total-data">sum 10 data</div>
+            </div>
+        </div>
 
         <!-- 底部版权信息 start -->
-        <!-- <div class="bottom-copy">
-
-        </div> -->
-
+        <div class="bottom-copy">
+            <p>宝塔Linux面板 ©2014-2020 广东堡塔安全技术有限公司 (bt.cn)求助|建议请上宝塔论坛</p>
+        </div>
         <!-- 底部版权信息 end -->
     </div>
+
     <!-- 右边信息区域 end -->
 </body>
+
+<script>
+    //
+    function changeWidth() {
+        var winheight = 0;
+        winheight = document.body.clientWidth;
+        var right_width = document.getElementsByClassName('right-info')[0];
+        right_width.style.width = (winheight - 190) + 'px';
+        var Table = document.getElementsByClassName('Table')[0];
+        Table.style.width = (winheight - 190) * 0.99 * 0.98 + 'px';
+
+        var table_width = Table.offsetWidth;
+
+        var th_1 = document.querySelector('.table thead th:nth-child(1)');
+        th_1.style.width = table_width * 0.25 + 'px';
+        var th_2 = document.querySelector('.table thead th:nth-child(2)');
+        th_2.style.width = table_width * 0.1 + 'px';
+        var th_3 = document.querySelector('.table thead th:nth-child(3)');
+        th_3.style.width = table_width * 0.1 + 'px';
+        var th_4 = document.querySelector('.table thead th:nth-child(4)');
+        th_4.style.width = table_width * 0.2 + 'px';
+        var th_5 = document.querySelector('.table thead th:nth-child(5)');
+        th_5.style.width = table_width * 0.35 + 'px';
+        // document.querySelector('.table tbody').style.width = table_width;
+
+        var td_1 = document.querySelector('.tbody tbody td:nth-child(1)');
+        td_1.style.width = table_width * 0.25 + 'px';
+        var td_2 = document.querySelector('.tbody tbody td:nth-child(2)');
+        td_2.style.width = table_width * 0.1 + 'px';
+        var td_3 = document.querySelector('.tbody tbody td:nth-child(3)');
+        td_3.style.width = table_width * 0.1 + 'px';
+        var td_4 = document.querySelector('.tbody tbody td:nth-child(4)');
+        td_4.style.width = table_width * 0.2 + 'px';
+        var td_5 = document.querySelector('.tbody tbody td:nth-child(5)');
+        td_5.style.width = table_width * 0.35 + 'px';
+
+    }
+    changeWidth()
+        // 
+    window.onresize = function() {
+        if (document.body.clientWidth > 950) {
+            changeWidth()
+        }
+
+    }
+</script>
 
 </html>
