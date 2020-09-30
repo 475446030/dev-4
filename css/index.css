@@ -33,7 +33,7 @@
 
 .upload {
     width: 99%;
-    height: 150px;
+    height: 175px;
     margin: 10px 0;
     padding-top: 10px;
     box-sizing: border-box;
@@ -41,21 +41,26 @@
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
 }
 
-.up-border {
+.dropzone,
+.dz-clickable,
+.dz-started {
     width: 98%;
-    height: 130px;
+    height: 95%;
     margin: 0 auto;
     text-align: center;
-    line-height: 130px;
     font-size: 20px;
     border-radius: 10px;
     border: 1px dashed #999;
     cursor: pointer;
 }
 
+.dropzone .dz-preview {
+    margin: 0 10px;
+}
+
 .files {
     width: 99%;
-    height: calc(100% - 300px);
+    height: calc(100% - 325px);
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
     padding-top: 10px;
@@ -284,3 +289,6 @@ table {
     color: #999;
     font-size: 13px;
 }
+
+
+/* dropzone */
